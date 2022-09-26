@@ -38,9 +38,41 @@ body {
 }
 
 /* атомарные классы */
+.btn_area {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.btn {
+    background: #212121;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+.btn.s1 {
+    font-size: 1.5em;
+    padding: 17px 33px;
+}
+.btn.s2 {
+    flex-grow: 1;
+    margin-right: 16px;
+    background: #212121;
+    font-size: 1.13em;
+}
+.btn.s4 {
+    display: flex;
+    justify-content: center;
+    /* height: 48px; */
+    align-items: center;
+    font-size: 1.12em;
+    padding: 14px;
+}
 .container {
     width: 1200px;
     margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .block {
     margin-top: 100px;
@@ -211,80 +243,171 @@ a.btn {
     gap: 24px;
 }
 #houses .item {
-    border: 1px solid black;
     position: relative;
+    background: white;
 }
-#houses a {
+
+
+
+#houses .item:hover {
+    background: #212121;
+    color: white;
+} 
+
+/* #houses a {
     background: black;
     color: #FFF;
     text-decoration: none;
-}
-#houses .status {
+    width: 46px;
+    text-align: center;
+} */
+#houses .btn.s3 {
     position: absolute;
     z-index: 1;
-    left: 70px;
-    top: 20px;
+    left: 24px;
+    top: 19px;
+    font-size: 0.9em;
 }
-/*
-#houses .item.c1 .square {
-    position: relative;
+#houses .inner {
+    display: grid;
+    padding: 24px;
+    border: 1px solid #CCC;
+    border-width: 0 1px 1px 1px;
 }
-#houses .item.c2 .square {
-    position: relative;
+#houses .preview {
+    display: block;
+    width: 100%;
 }
-#houses .item.c3 .square {
-    position: relative;
+#houses .row.c1 {
+    font-size: 1.1em;
+    font-weight: 500;
 }
-
-#houses .item.c1 .square a {
-    left: 70px;
-    top: 20px;
-}
-#houses .item.c2.square a {
-  left: 70px;
-    top: 20px;
-}
-#houses .item.c3.square a {
-  left: 70px;
-    top: 20px;
-}
-*/
-#houses .title {
-    font-size: 1.2em;
-    letter-spacing: -0.03em;
-}
-#houses h3 {
-    font-weight: 700;
+#houses .digit {
     font-size: 2em;
+    font-weight: 700;
 }
-#houses .price {
+#houses .per {
+    font-size: 1.14em;
+    font-weight: 500;
+}
+#houses .row.c3 {
     display: flex;
-    align-items: baseline;
-}
-#houses .line {
-    display: flex;
-}
-#houses .advertising {
-    margin: 24px;
-    line-height: 0.1;
-}
-#houses .line.c1 {
-    display: flex;
-    flex-direction: column;
-    line-height: 0.12;
-}
-#houses .line.c2 {
     align-items: center;
+    padding-top: 16px;
+    font-weight: 700;
+    font-size: 1.13em;
+    padding-bottom: 8px;
 }
-#houses .line.c3 {
-    align-items: center;
-}
-#houses .circs {
-    flex-direction: column;
+#houses .row.c4 {
     display: flex;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    font-size: 1.1em;
+    justify-content: space-between;
 }
-#houses .container {
+#houses .row.c4 .col {
+    display: flex;
+}
+#houses .label {
+    padding-left: 4px;
+}
+#houses .row.c5 {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+#houses .like {
+    background: white;
+    border: 2px solid #212121;
+    padding: 12px 13px 12px 13px;
+    box-sizing: border-box;
+}
 
+#blog .wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+#blog .item {
+background: white;
+}
+/*#blog .item:hover {
+    background: #212121;
+    color: white;
+} требуется дополнительная информация*/
+
+#blog .preview {
+    display: block;
+    width: 100%;
+}
+#blog .inner {
+    border: 1px solid#ccc;
+    border-width: 0 1px 1px 1px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+#blog .row.c1 {
+    display: flex;
+    color: #808080;
+    justify-content: flex-start;
+    font-size: 1.12em;
+    padding-bottom: 8px;
+}
+#blog .col {
+    display: flex;
+    align-items: center;
+}
+#blog .col.c1 {
+    padding-right: 16px;
+}
+#blog .label {
+    padding-left: 4px;
+}
+#blog .row.c2 {
+    color: #212121;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1.33em;
+    padding-bottom: 24px;
+}
+
+
+#reviews .title {
+    display: flex;
+    justify-content: space-between;
+}
+#reviews .wrap {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+#reviews .item {
+    background: white;
+    border: 1px solid grey;
+    padding: 32px;
+}
+#reviews .info {
+    font-size: 1.12em;
+    line-height: 1.45em;
+}
+#reviews .inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+#reviews .exp {
+    display: flex;
+    align-items: center;
+}
+#reviews .name {
+    font-size: 1em;
+    font-weight: 800;
+}
+/*#reviews a {
+    background: black;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}*/
+#reviews .preview {
+    border-radius: 50%;
 }
