@@ -411,3 +411,52 @@ background: white;
 #reviews .preview {
     border-radius: 50%;
 }
+
+
+#touch .wrap {
+    display: flex;
+    justify-content: space-between;
+}
+#touch .item.s1 {
+    background: white;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    /* padding: 31px 32px 32px 32px; */
+}
+#touch .info {
+    color: #808080;
+    font-size: 0.88em;
+}
+#touch .ent {
+    color: #ccc;
+    border: 1px solid #212121;
+   /* width: 401px;*/
+    font-size: 1.13em;
+}
+#touch .ent.s1 {
+    /*padding: 21px;*/
+}
+#touch .ent.s2 {
+   /* padding: 21px;*/
+}
+#touch .ent.s3 {
+   /* padding: 21px 21px 85px 21px;*/
+}
+#touch .btn.s3 {
+
+}
+
+footer .wrap {
+    background: #212121;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+    padding: 100px 100px 80px 100px;
+}
+footer .title {
+    color: white;
+}
+footer .row {
+    color: #808080;
+}
