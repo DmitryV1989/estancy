@@ -41,13 +41,12 @@ body {
 .btn_area {
     display: flex;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 13px;
 }
 .btn {
     background: #212121;
     text-decoration: none;
     color: white;
-    display: inline-block;
     text-align: center;
 }
 .btn.s1 {
@@ -57,8 +56,10 @@ body {
 .btn.s2 {
     flex-grow: 1;
     margin-right: 16px;
-    background: #212121;
     font-size: 1.13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn.s4 {
     display: flex;
@@ -94,7 +95,7 @@ body {
     font-size: 56px;
     font-weight: 800;
     color: #212121;
-    margin-top: 16px;
+    margin-top: 11px;
 }
 
 /* основные стили */
@@ -151,22 +152,6 @@ header .container {
     line-height: 25px;
     margin-bottom: 24px;
 }
-/* 
-a.btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 24px;
-    gap: 8px; 
-    font-size: 18px;
-    font-weight: 600;
-    background: black;
-}
-.btn .c1 {
-    background: white;
-}
-*/
 #service a.btn {
     display: block;
     background: #212121;
@@ -183,8 +168,8 @@ a.btn {
 #service .item.active .btn {
     background: #FFF;
     color: #212121;
-
 }
+
 
 #about .container {
     display: grid;
@@ -194,7 +179,6 @@ a.btn {
 }
 #about .title_area {
    text-align: left;
-
 }
 #about .wrap {
     font-size: 1.125em;
@@ -204,69 +188,52 @@ a.btn {
     font-size: 1.53em;
     display: inline-block;
     padding: 16px 32px 16px 32px;
-    /* font-weight: 600; */
 }
-/*#about .item.active .*/
 
-#process .container {
+
+#process .wrap {
     display: flex;
-    /*flex-direction: row; */
 }
 #process .col.c1 {
-    margin-right: 78px;
+    padding-right: 78px;
 }
 #process .col.c2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+#process .inner {
+    display: flex;
+}
 #process .digit {
     border: 4px solid black;
-    margin-right: 24px;
     font-size: 2.5em;
     font-weight: 800;
-    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 96px;
-       /* height: 96px;
-    width: 96px; */
-}
-#process .item {
-    display: flex;
+    box-sizing: border-box;
+    padding-top: 19.5px;
+    padding-bottom: 19.5px;
 }
 
 
 #houses .wrap {
     display: flex;
     gap: 24px;
+    padding-top: 20px;
 }
 #houses .item {
     position: relative;
     background: white;
 }
-
-
-
-#houses .item:hover {
-    background: #212121;
-    color: white;
-} 
-
-/* #houses a {
-    background: black;
-    color: #FFF;
-    text-decoration: none;
-    width: 46px;
-    text-align: center;
-} */
 #houses .btn.s3 {
     position: absolute;
     z-index: 1;
-    left: 24px;
-    top: 19px;
+    left: 16px;
+    top: 18px;
     font-size: 0.9em;
+    padding: 1px 9px 4px 8px;
 }
 #houses .inner {
     display: grid;
@@ -281,6 +248,7 @@ a.btn {
 #houses .row.c1 {
     font-size: 1.1em;
     font-weight: 500;
+    padding-top: 1px;
 }
 #houses .digit {
     font-size: 2em;
@@ -297,11 +265,13 @@ a.btn {
     font-weight: 700;
     font-size: 1.13em;
     padding-bottom: 8px;
+    padding-left: 4px;
 }
 #houses .row.c4 {
     display: flex;
     font-size: 1.1em;
     justify-content: space-between;
+    padding-top: 3px;
 }
 #houses .row.c4 .col {
     display: flex;
@@ -320,6 +290,21 @@ a.btn {
     padding: 12px 13px 12px 13px;
     box-sizing: border-box;
 }
+#houses .item:hover {
+    background: #212121;
+    color: white;
+} 
+#houses .item:hover .btn.s2 {
+    background: white;
+    color: #212121;
+}
+#houses .item:hover .like {
+
+}
+#houses .item:hover .icon {
+
+}
+
 
 #blog .wrap {
     display: grid;
@@ -327,12 +312,8 @@ a.btn {
     gap: 24px;
 }
 #blog .item {
-background: white;
+    background: white;
 }
-/*#blog .item:hover {
-    background: #212121;
-    color: white;
-} требуется дополнительная информация*/
 
 #blog .preview {
     display: block;
@@ -369,21 +350,35 @@ background: white;
     line-height: 1.33em;
     padding-bottom: 24px;
 }
+#blog .item:hover {
+    background: #212121;
 
+} 
+#blog .item:hover .row.c2 {
+    color: white;
+}
+#blog .item:hover .btn.s4 {
+    color: #212121;
+    background: white;
+}
 
 #reviews .title {
     display: flex;
     justify-content: space-between;
 }
+#reviews .slider {
+    padding-top: 14px;
+}
 #reviews .wrap {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 24px;
+    padding-top: 22px;
 }
 #reviews .item {
     background: white;
     border: 1px solid grey;
-    padding: 32px;
+    padding: 30px 30px 30px 32px;
 }
 #reviews .info {
     font-size: 1.12em;
@@ -392,7 +387,7 @@ background: white;
 #reviews .inner {
     display: flex;
     justify-content: space-between;
-    padding-top: 16px;
+    padding-top: 14px;
 }
 #reviews .exp {
     display: flex;
@@ -402,57 +397,96 @@ background: white;
     font-size: 1em;
     font-weight: 800;
 }
-/*#reviews a {
-    background: black;
-    color: #FFF;
-    text-decoration: none;
-    text-align: center;
-}*/
 #reviews .preview {
     border-radius: 50%;
+}
+#reviews .rating {
+    display: flex;
+}
+#reviews .star_area {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+
+#staff .wrap {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+#staff .col {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#staff .photo {
+    border-radius: 50%;
+    padding: 24px 84px 23px 84px;
+}
+#staff .inner {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 23px 23px 23px;
+}
+#staff .name {
+    text-align: center;
+    color: #212121;
+    font-weight: 800;
+    font-size: 1.52em;
+    padding-bottom: 10px;
+}
+#staff .status {
+    text-align: center;
+    color: #808080;
+    font-size: 1.13em;
+    padding-bottom: 25px;
+}
+#staff .col:hover {
+    background: #212121;
+}
+#staff .col:hover .name {
+    color: white;
+}
+#staff .col:hover .btn_area {
+    background: white;
+    color: #212121;
 }
 
 
 #touch .wrap {
     display: flex;
-    justify-content: space-between;
+    gap: 78px;
 }
-#touch .item.s1 {
+#touch form.col.c1 {
     background: white;
     border: 1px solid #ccc;
-    display: flex;
-    flex-direction: column;
-    /* padding: 31px 32px 32px 32px; */
+    padding: 32px;
 }
-#touch .info {
-    color: #808080;
-    font-size: 0.88em;
+#touch form.col.c1 * {
+    display: block;
 }
-#touch .ent {
-    color: #ccc;
+
+#touch form.col.c1 .field {
     border: 1px solid #212121;
-   /* width: 401px;*/
-    font-size: 1.13em;
-}
-#touch .ent.s1 {
-    /*padding: 21px;*/
-}
-#touch .ent.s2 {
-   /* padding: 21px;*/
-}
-#touch .ent.s3 {
-   /* padding: 21px 21px 85px 21px;*/
-}
-#touch .btn.s3 {
+    padding: 10px;
+    font-family: 'Gilroy';
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+
 
 }
+footer {
+    background: #212121; 
+}
 
-footer .wrap {
-    background: #212121;
+footer .container {   
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 24px;
-    padding: 100px 100px 80px 100px;
 }
 footer .title {
     color: white;
