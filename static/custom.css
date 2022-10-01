@@ -136,11 +136,7 @@ header .container {
 #service .item {
     border: 1px solid #808080;
     padding: 24px;
-    background: #FFF;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* text-align: center; */   
+    background: #FFF;  
 }
 #service h3 {
     font-size: 1.6em;
@@ -287,8 +283,7 @@ header .container {
 #houses .like {
     background: white;
     border: 2px solid #212121;
-    padding: 12px 13px 12px 13px;
-    box-sizing: border-box;
+    padding: 14px 13px 14px 13px;
 }
 #houses .item:hover {
     background: #212121;
@@ -298,11 +293,15 @@ header .container {
     background: white;
     color: #212121;
 }
-#houses .item:hover .like {
-
+#houses .item:hover .like path {
+    fill: white;
 }
-#houses .item:hover .icon {
-
+#houses .item:hover .like {
+    background: #212121;
+    border: 2px solid white;
+}
+#houses .item:hover .icon path {
+    fill: white;
 }
 
 
@@ -494,3 +493,9 @@ footer .title {
 footer .row {
     color: #808080;
 }
+
+/* адаптивный режим */
+@media all and (max-width: 1200px) {
+
+}
+
