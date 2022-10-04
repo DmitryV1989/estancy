@@ -52,6 +52,7 @@ body {
 .btn.s1 {
     font-size: 1.5em;
     padding: 17px 33px;
+    margin-top: 26px;
 }
 .btn.s2 {
     flex-grow: 1;
@@ -392,8 +393,11 @@ header .container {
     display: flex;
     align-items: center;
 }
+#reviews .descr {
+    padding-left: 12px;
+}
 #reviews .name {
-    font-size: 1em;
+    font-size: 1.12em;
     font-weight: 800;
 }
 #reviews .preview {
@@ -454,6 +458,12 @@ header .container {
     color: #212121;
 }
 
+#faq .wrap {
+    display: flex;
+    gap: 78px;
+}
+
+
 
 #touch .wrap {
     display: flex;
@@ -475,9 +485,30 @@ header .container {
     font-size: 1em;
     width: 100%;
     box-sizing: border-box;
-
-
 }
+#touch .col.c2 {
+    display: flex;
+    flex-direction: column;
+}
+#touch .title {
+    display: flex;
+    flex-direction: column;
+}
+
+#touch .col.c2 .descr {
+    color: #808080;
+    font-size: 1.125em;
+}
+/* требуется доп. информация. ограничить ширину блока */
+
+
+#subscribe .info {
+    color: #808080;
+    font-size: 1.12em;
+    text-align: center;
+}
+
+
 footer {
     background: #212121; 
 }
