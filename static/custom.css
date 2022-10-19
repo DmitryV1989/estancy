@@ -72,6 +72,7 @@ body {
 .btn.s5 {
     font-size: 1.56em;
     padding: 14px;
+    margin-top: 28px;
 }
 .container {
     width: 1200px;
@@ -89,13 +90,13 @@ body {
 .title_area.s1 {
     text-align: left;
 }
-.title_area .descr {
+.title_area .descr.c1 {
     font-size: 18px;
     font-weight: 700;
     color: #808080;
     letter-spacing: 0.24em;
 }
-.title_area h2 {
+.title_area .descr.c2 {
     font-size: 56px;
     font-weight: 800;
     color: #212121;
@@ -131,6 +132,9 @@ header .container {
     font-weight: 500;
 }
 
+#service .title_area {
+    margin-bottom: 67px;
+}
 #service .wrap {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -145,7 +149,7 @@ header .container {
 #service h3 {
     font-size: 1.6em;
 }
-#service .descr {
+#service .inner {
     color: #808080;
     font-size: 1.1em;
     font-weight: 500;
@@ -367,7 +371,6 @@ header .container {
 
 #reviews .title {
     display: flex;
-    justify-content: space-between;
 }
 #reviews .slider {
     padding-top: 14px;
@@ -396,9 +399,6 @@ header .container {
     display: flex;
     align-items: center;
 }
-#reviews .descr {
-    padding-left: 12px;
-}
 #reviews .name {
     font-size: 1.12em;
     font-weight: 800;
@@ -408,12 +408,19 @@ header .container {
 }
 #reviews .rating {
     display: flex;
+    padding-top: 9px;
 }
 #reviews .star_area {
     display: grid;
     grid-template-columns: repeat(5,1fr);
 }
-
+#reviews .digit {
+    font-size: 0.9em;
+}
+#reviews .inner .descr {
+    padding-left: 11px;
+    padding-bottom: 3px;
+}
 
 #staff .wrap {
     display: grid;
@@ -482,22 +489,10 @@ header .container {
     display: flex;
     flex-direction: column;
 }
-#touch form.col.c1 * {
-    display: block;
-}
 #touch form.col.c1 .label {
     font-size: 0.89em;
-}
-#touch form.col.c1 .label.c1 {
-    margin-bottom: 6px;
-}
-#touch form.col.c1 .label.c2 {
-    margin-top: 13px;
     margin-bottom: 5px;
-}
-#touch form.col.c1 .label.c3 {
-    margin-top: 13px;
-    margin-bottom: 5px;
+    display: block;
 }
 #touch form.col.c1 .field {
     border: 1px solid #212121;
@@ -505,17 +500,8 @@ header .container {
     font-size: 1.13em;
     width: 100%;
     box-sizing: border-box;
-
-}
-#touch form.col.c1 .field.c1 {
-    padding: 20px 10px 20px 22px;
-}
-#touch form.col.c1 .field.c2 {
-    padding: 20px 10px 20px 22px;
-}
-#touch form.col.c1 .field.c3 {
-    padding: 14px 10px 1px 22px;
-    margin-bottom: 42px;
+    padding: 20px 10px;
+    margin-bottom: 12px;
 }
 #touch .col.c2 {
     flex-grow: 1;
@@ -523,24 +509,50 @@ header .container {
 #touch .title {
     display: flex;
     flex-direction: column;
+    gap: 24px;
 }
-
-#touch .col.c2 .descr {
+#touch .col.c2 .item {
     color: #808080;
     font-size: 1.125em;
+    line-height: 1.5em;
+    padding-bottom: 64px;
 }
-#touch .net {
+#touch .socnet {
     display: flex;
     gap: 16px;
+    padding-bottom: 34px;
 }
 #touch .icon {
     border: 1px solid #212121;
     padding: 12px 11px 12px 12px;
     background: white;
 }
+#touch .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+#touch .row {
+    display: flex;
+    gap: 17px;
+}
+#touch .row.c4 img {
+    align-self: baseline;
+}
+#touch .info {
+    font-size: 1.5em;
+    color: #212121;
+}
+#touch .icon:hover {
+    background: #212121;
+}
+#touch .icon:hover path {
+   fill: white;
+}
 
-
-
+#subscribe .title_area {
+    padding-bottom: 28px;
+}
 #subscribe .info {
     color: #808080;
     font-size: 1.12em;
