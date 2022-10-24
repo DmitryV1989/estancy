@@ -38,6 +38,10 @@ body {
 }
 
 /* атомарные классы */
+.bimg {
+    display: block;
+    width: 100%;
+}
 .btn_area {
     display: flex;
     justify-content: center;
@@ -75,7 +79,7 @@ body {
     margin-top: 28px;
 }
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -179,9 +183,9 @@ header .container {
     grid-template-columns: 1fr 510px;
     gap: 78px;
 }
-#about .title_area {
-   text-align: left;
-}
+/*#about .container {
+    display: flex;
+}*/
 #about .wrap {
     font-size: 1.125em;
     line-height: 1.36em;
@@ -193,7 +197,7 @@ header .container {
     padding: 16px 32px 16px 32px;
 }
 #about .preview {
-
+    max-width: 510px;
 }
 
 #process .wrap {
@@ -586,7 +590,7 @@ footer .row.c1 {
 }
 
 /* адаптивный режим */
-@media all and (max-width: 1200px) {
+/*@media all and (max-width: 1200px) {
 
     .container {
         width: 800px;
@@ -642,7 +646,7 @@ footer .row.c1 {
     #about .wrap {
         font-size: 0.75em;
         padding-bottom: 14px;
-}
+    }
     #about a {
         font-size: 1.02em;
         display: inline-block;
@@ -793,6 +797,33 @@ footer .row.c1 {
 
 
 
+} */
+    
+@media all and (max-width: 1230px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #about .container {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
 }
 
+@media all and (max-width: 920px) {
+    #about .container {
+        display: unset;
+    }
+    #about .col, #about .title_area {
+        text-align: center;
+    }
+    #about .preview {
+        margin: 30px auto 0;
+    }
+    #digits .container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
 
