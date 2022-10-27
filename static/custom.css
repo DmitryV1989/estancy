@@ -378,11 +378,15 @@ header .container {
 #reviews .slider {
     padding-top: 14px;
 }
-#reviews .wrap {
+/*#reviews .wrap {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 24px;
     padding-top: 22px;
+}*/
+#reviews .wrap {
+    display: flex;
+    gap: 24px;
 }
 #reviews .item {
     background: white;
@@ -589,216 +593,8 @@ footer .row.c1 {
 
 }
 
-/* адаптивный режим */
-/*@media all and (max-width: 1200px) {
+    /*адаптивный режим*/
 
-    .container {
-        width: 800px;
-        margin: 0 auto;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .block {
-        margin-top: 66px;
-        margin-bottom: 66px;
-    }
-    .title_area .descr.c1 {
-        font-size: 0.75em;
-        font-weight: 700;
-        color: #808080;
-        letter-spacing: 0.24em;
-    }
-    .title_area .descr.c2 {
-        font-size: 2.35em;
-        font-weight: 800;
-        color: #212121;
-        margin-top: 11px;
-    }
-    .btn.s1 {
-        font-size: 1em;
-        padding: 12px 22px;
-        margin-top: 17px;
-    }
-    .btn.s2 {
-        margin-right: 11px;
-        font-size: 0.754em;
-    }
-    .btn.s4 {
-        font-size: 0.74em;
-        padding: 9px;
-    }
-    .btn.s5 {
-        font-size: 1.04em;
-        padding: 9px;
-        margin-top: 18px;
-    }
-    .btn_area {
-        padding-top: 8px;
-    }
-    #about .container {
-        display: grid;
-        grid-template-columns: 1fr 340px;
-        gap: 52px;
-    }
-    #about .preview {
-        width: 340px;
-    }
-    #about .wrap {
-        font-size: 0.75em;
-        padding-bottom: 14px;
-    }
-    #about a {
-        font-size: 1.02em;
-        display: inline-block;
-        padding: 16px 32px 16px 32px;
-    }
-    #digits .container {
-        gap: 10px;
-    }
-    #digits .title {
-        font-size: 2.67em;
-    }
-    #digits .discr {
-        font-size: 0.8em;
-    }
-    #service .preview {
-        width: 80px;
-        height: 80px;
-    }
-    #service h3 {
-        font-size: 1.07em;
-    }
-    #service .inner {
-        color: #808080;
-        font-size: 0.74em;
-        line-height: 16.5px;
-        margin-bottom: 16px;
-    }
-    #service a.btn {
-        padding: 9px;
-    }
-    #process .preview {
-        width: 340px;
-        height: 390px;
-    }
-    #houses .preview {
-        width: 256px;
-        height: 171px;
-    }
-    #houses .wrap {
-        gap: 16px;
-        padding-top: 20px;
-    }
-    #houses .inner {
-        padding: 16px;
-        border-width: 0 1px 1px 1px;
-    }
-    #houses .row.c1 {
-        font-size: 0.74em;
-        padding-top: 1px;
-    }
-    #houses .digit {
-        font-size: 1.34em;
-    }
-    #houses .per {
-        font-size: 0.76em;
-    }
-    #houses .row.c3 {
-        font-size: 0.75em;
-    }
-    #houses .row.c3 .icon {
-        width: 18px;
-        height: 18px;
-    }
-      #houses .row.c4 {
-        font-size: 0.68em;
-    }
-    #houses .row.c4 .icon {
-        width: 18px;
-        height: 18px;
-    }
-    #houses .like {
-        width: 12px;
-        height: 10px;
-    }
-    #houses .like {
-        background: white;
-        border: 2px solid #212121;
-        padding: 9px 8px 9px 8px;
-    }
-    #houses .row.c5 {
-        padding-top: 18px;
-        padding-bottom: 18px;
-    }
-    #blog .wrap {
-        gap: 18px;
-    }
-    #blog .inner {
-        padding: 16px;  
-    }
-    #blog .row.c1 {
-        font-size: 0.747em;
-        padding-bottom: 8px;
-    }
-    #blog .row.c1 .icon {
-        width: 18px;
-        height: 18px;
-    }
-    #blog .row.c2 {
-        font-size: 1em;
-        line-height: 1.33em;
-        padding-bottom: 18px;
-    }
-    #reviews .item {
-        padding: 20px 20px 20px 20px;
-    }
-    #reviews .info {
-        font-size: 0.74em;
-        line-height: 1.45em;
-    }
-    #staff .wrap {
-        gap: 18px;
-        padding-top: 13px;
-        padding-bottom: 27px;
-    }
-    #staff .photo {
-        width: 74px;
-        height: 74px;
-        padding: 18px 56px 18px 56px;
-    }
-    #staff .inner {
-        padding: 0px 16px 16px 16px;
-    }
-    #staff .name {
-        font-size: 1em;
-        padding-bottom: 7px;
-    }
-    #staff .status {
-        font-size: 0.754em;
-        padding-bottom: 16px;
-    }
-    #touch .wrap {
-        gap: 52px;
-    }
-    #touch form.col.c1 .label {
-        font-size: 0.59em;
-        margin-bottom: 3px;
-    }
-    #touch form.col.c1 .field {
-        font-size: 0.75em;
-        padding: 14px 6px;
-        margin-bottom: 8px;
-    }
-    #touch .col.c2 .item {
-        font-size: 0.75em;
-        line-height: 1.5em;
-        padding-bottom: 42px;
-    }
-
-
-
-} */
-    
 @media all and (max-width: 1230px) {
     .container {
         padding-left: 15px;
@@ -808,8 +604,11 @@ footer .row.c1 {
         grid-template-columns: 1fr 1fr;
 
     }
-
+    #houses .wrap {
+        gap: 5px;
+    }
 }
+
 
 @media all and (max-width: 920px) {
     #about .container {
@@ -824,6 +623,34 @@ footer .row.c1 {
     #digits .container {
         grid-template-columns: repeat(2,1fr);
     }
-
+     #service .wrap {
+        display: unset;
+    }
+   #process .wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    #houses .wrap {
+        display: unset;
+    }
+    #blog .wrap {
+        display: unset;
+    }
 }
 
+
+/*@media all and (max-width: 590px) {
+
+}
+*/
+
+@media all and (max-width: 480px) {
+ #digits .container {
+    display: unset;
+ }   
+}
+
+
+
+/*В блоке service кнопки внутри блоков при уменьшении ширины 
+экрана сдвигаются по вертикали неравномерно*/
