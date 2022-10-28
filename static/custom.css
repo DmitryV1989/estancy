@@ -594,8 +594,15 @@ footer .row.c1 {
 }
 
     /*адаптивный режим*/
-
+@media all and (min-width: 1231px) {
+    .nob {
+        display: none;
+    }
+}
 @media all and (max-width: 1230px) {
+    .nom {
+        display: none;
+    }
     .container {
         padding-left: 15px;
         padding-right: 15px;
@@ -623,15 +630,19 @@ footer .row.c1 {
     #digits .container {
         grid-template-columns: repeat(2,1fr);
     }
-     #service .wrap {
-        display: unset;
+    #service .wrap {
+        grid-template-columns: 1fr;
     }
-   #process .wrap {
+    #process .wrap {
         flex-direction: column;
         align-items: center;
     }
+    #process .col.c1 {
+        padding: 0;
+    }
     #houses .wrap {
-        display: unset;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     #blog .wrap {
         display: unset;
@@ -639,18 +650,9 @@ footer .row.c1 {
 }
 
 
-/*@media all and (max-width: 590px) {
-
-}
-*/
-
 @media all and (max-width: 480px) {
  #digits .container {
     display: unset;
  }   
 }
 
-
-
-/*В блоке service кнопки внутри блоков при уменьшении ширины 
-экрана сдвигаются по вертикали неравномерно*/
