@@ -614,6 +614,9 @@ footer .row.c1 {
     #houses .wrap {
         gap: 5px;
     }
+    #staff .wrap {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
@@ -631,7 +634,7 @@ footer .row.c1 {
         grid-template-columns: repeat(2,1fr);
     }
     #service .wrap {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2,1fr);
     }
     #process .wrap {
         flex-direction: column;
@@ -645,14 +648,31 @@ footer .row.c1 {
         justify-content: center;
     }
     #blog .wrap {
-        display: unset;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #reviews .wrap {
+        flex-direction: column;
+    }
+     #staff .wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #faq .wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    #touch .wrap {
+        flex-direction: column;
+        align-items: center; 
     }
 }
 
 
 @media all and (max-width: 480px) {
- #digits .container {
-    display: unset;
- }   
+     #digits .container {
+        display: unset;
+    } 
+     #staff .wrap {
+         grid-template-columns: 1fr 1fr;
+    }  
 }
 
